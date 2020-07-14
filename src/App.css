@@ -38,6 +38,8 @@ table {
   width: 100%;
 }
 
+
+
 td,  th {
   border: 1px solid #ddd;
   padding: 8px;
@@ -53,4 +55,23 @@ th {
   text-align: left;
   background-color: #4CAF50;
   color: white;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #DCDCDC;
+  color: black;
+  text-align: center;
+}
+
+.footer p {
+	display: inline-block;
+	padding-right: 1em;
+}
+
+.footer a {
+	color: #B22222;
 }

@@ -41,6 +41,16 @@ class Preview extends React.Component {
 	}
 }
 
+const Footer = () => {
+	return (
+		<div className="footer">
+			<p>Made with much coffee, React and Stack<strong>overflow</strong></p>
+			<p>Code is on <a href="https://github.com/saadanerdetbare/markdownviewer" target="_blank" rel="noopener noreferrer">github</a></p>
+			<p>Jakob Dahl</p>
+		</div>
+	)
+}
+
 
 class App extends React.Component {
 	constructor(props) {
@@ -60,6 +70,7 @@ class App extends React.Component {
 				<div className="row">
 					<Editor value={this.state.value} onChange={this.handleChange} />
 					<Preview value={this.state.value} />
+					<Footer />
 				</div>
 			</div>
 		);
