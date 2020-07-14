@@ -44,9 +44,9 @@ class Preview extends React.Component {
 const Footer = () => {
 	return (
 		<div className="footer">
-			<p>Made with much coffee, React and Stack<strong>overflow</strong></p>
+			<p>Made with React, much coffee and Stack<strong>overflow</strong></p>
+			<p>freeCodeCamp Markdown Previewer project by Jakob Dahl</p>
 			<p>Code is on <a href="https://github.com/saadanerdetbare/markdownviewer" target="_blank" rel="noopener noreferrer">github</a></p>
-			<p>Jakob Dahl</p>
 		</div>
 	)
 }
