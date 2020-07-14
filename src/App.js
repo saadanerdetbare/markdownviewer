@@ -5,7 +5,6 @@ import 'bootstrap/dist/css/bootstrap.css'
 import defaultMarkdown from 'DefaultMarkdown';
 import './App.css';
 
-
 class Editor extends React.Component {
 	constructor(props) {
 		super(props);
@@ -29,16 +28,13 @@ class Editor extends React.Component {
 	}
 }
 
-class Preview extends React.Component {
 
-	render() {
-		const value = this.props.value;
-		return (
-			<div className="col-md-10 offset-md-1" id="preview">
-				<ReactMarkdown source={value} plugins={[breaks]} />
-			</div>
-		);
-	}
+const Preview = ({ value }) => {
+	return (
+		<div className="col-md-10 offset-md-1" id="preview">
+			<ReactMarkdown source={value} plugins={[breaks]} />
+		</div>
+	)
 }
 
 const Footer = () => {
