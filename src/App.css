@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+
+@font-face {
+	font-family: 'Cascadia Code PL';
+	src: url('CascadiaCodePL.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+code {
+  font-family: "Cascadia Code PL", "Cascadia Code", source-code-pro, Menlo, Monaco, Consolas,  monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+blockquote {
+    color: #666;
+    margin: 0;
+    padding-left: 1.5em;
+    border-left: 0.5em #eee solid;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+textarea {
+	width: 100%;
+	height: 600px;
+
+}
+
+#editor {
+	margin-top: 40px;
+}
+
+hr {
+	border-top: 1px solid black;
+}
+
+table {
+  font-family: "Cascadia Code PL", "Cascadia Code", source-code-pro, Menlo, Monaco, Consolas,  monospace;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,  th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {background-color: #ddd;}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
